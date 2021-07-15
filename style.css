@@ -1,0 +1,153 @@
+@font-face {
+    font-family: clock;
+    src: url('fonts/digital-7.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #0ee6b0;
+}
+
+.clock {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 350px;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    font-family: clock;
+    font-weight: lighter;
+}
+
+.inside {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 250px;
+    background-color: #222;
+}
+
+.content {
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.days {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.days span {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.text{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 66px;
+    font-size: 70px;
+}
+
+#time {
+    font-size: 1.5rem;
+}
+
+#date {
+    margin-top: 100px;
+    margin-left: -120px;
+}
+
+#cal img {
+    width: 30px;
+    height: 30px;
+}
+
+span#day {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+
+span#month {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 45px;
+
+}
+
+span#year {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 105px;
+
+}
+#date span {
+	font-size: 22px;
+}
+
+
+/*Color progress bar*/
+#box, #footerBox {
+    height: 10px;
+    width: 100%; 
+    position: relative;
+}
+
+#box #color {
+	content: "";
+	position: absolute;
+	height: 100%; 
+	background-color: #fff;
+	transition: 1s; 
+}
+
+ #footerColor {
+	content: "";
+	position: absolute;
+	height: 10px;
+    bottom: 0;
+    right: 0; 
+	background-color: #fff;
+	transition: 1s; 
+}
+#leftColor {
+	content: "";
+	position: absolute;
+	height: 0px;
+    bottom: 0;
+    left: 0; 
+    width: 10px;
+	background-color: #fff;
+	transition: 1s; 
+}
+
+#rightColor {
+	content: "";
+	position: absolute;
+	height: 0px;
+    top: 0;
+    right: 0; 
+    width: 10px;
+	background-color: #fff;
+	transition: 1s; 
+}
+

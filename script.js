@@ -36,7 +36,14 @@ setInterval(function(){
 
    //Date print 
    min.innerHTML=m;
-   sec.innerHTML=s;
+
+if (s < 10) {
+   sec.innerHTML= "0" + s;
+} else {
+   sec.innerHTML= s;
+}
+   
+
 
    if(h > 12){
     hours.innerHTML=h-12;

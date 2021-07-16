@@ -34,17 +34,23 @@ setInterval(function(){
 
 
 
-   //Date print 
-   min.innerHTML=m;
+   //Minutes
 
-if (s < 10) {
-   sec.innerHTML= "0" + s;
-} else {
-   sec.innerHTML= s;
-}
+      if (m < 10) {
+         min.innerHTML= "0" + m;
+   } else {
+        min.innerHTML=m;
+   }
+
+   //Seconds
+   if (s < 10) {
+      sec.innerHTML= "0" + s;
+   } else {
+      sec.innerHTML= s;
+   }
    
 
-
+   //Hours
    if(h > 12){
     hours.innerHTML=h-12;
     time.innerHTML="PM";
@@ -52,6 +58,16 @@ if (s < 10) {
     hours.innerHTML=h;
     time.innerHTML="AM";
    }
+
+
+   if (h < 10) {
+      hours.innerHTML= "0" + h;
+   } else {
+      hours.innerHTML= h;
+   }
+
+
+
 
    day.innerHTML=date.getDate();
     let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
